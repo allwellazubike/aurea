@@ -1,0 +1,471 @@
+<!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://fontawesome.com/icons/bath?f=classic&s=regular">
+</head>
+<body>
+
+    <nav class="container mx-auto p-6 navig-bar">
+
+    <div class="flex items-center justify-between">
+
+      <div class="pt-1 pl-4">
+        <h1 id="logo" class="font-mono item-adv pl-6 text-4xl heading">Auréa</h1>
+      </div>
+
+      <div id="laptop-nav" class=" item-adv hidden md:flex space-x-6">
+        <a href="#" class="hover:text-blue-50 ">Story</a>
+        <a href="#" class="hover:text-blue-50 ">Manufacturing</a>
+        <a href="#" class="hover:text-blue-50 ">Products</a>
+        <a href="#" class="hover:text-blue-50 ">About</a>
+        <a href="#" class="hover:text-blue-50 ">Team</a>
+      </div>
+         
+      <a href="" id="shop-now" class="hidden md:block p-3 px-6 pt-2 text-white bg-amber-800 baseline rounded-2xl hover:bg-amber-600">Shop Now</a>
+   <!-- hamburger menu -->
+    <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+    </div>
+
+
+    <!-- mobile menu -->
+    <div class="md:hidden">
+      <div id="menu" class="relative flex-col items-center hidden self-end py-8 
+      mt-8 space-y-6 bg-[#F0EEE6] sm:w-auto sm:self-center rounded-4xl
+      mx-auto w-4/5">
+
+        <a href="#" class="hover:text-green-600">Story</a>
+        <a href="#" class="hover:text-green-600">Manufacturing</a>
+        <a href="#" class="hover:text-green-600">Products</a>
+        <a href="#" class="hover:text-green-600">About</a>
+        <a href="#" class="hover:text-green-600">Team</a>
+      </div>
+  </nav>
+
+    </div>
+    
+  </nav>
+
+<!-- Hero section -->
+  <section id="hero-section">
+    <div class="container flex flex-col md:flex-row items-center item-adv-hero px-16 mx-auto mt-10 space-y-0 md:space-y-0">
+      <!-- Left items -->
+      <div id="left-text" class="flex flex-col mb-32 space-y-7 md:w-1/2">
+        <h4 class="free-delivery max-w-md text-center pl-1 text-xs md:text-left">
+          FREE DELIVERY WORLDWIDE
+        </h4>
+        <h1 class="max-w-7xl text-5xl font-bold mb-3.5 text-center md:text-7xl md:text-left">
+          Feed Your Skin, <br> Find Your Glow.
+        </h1>
+
+        <h4 class="inner-tab max-w-md font-bold text-center pl-1 text-xs md:text-left">
+          Natural Inner Beauty 
+        </h4>
+        <p class="max-w-lg text-center md:text-left">
+          Enhance Your Radiance with Clean, Science-Driven Skincare -- Cruetly-Free, Sustainable, and Enriched with Antioxidants for Healthy, Timeless Skin. 
+        </p>
+        <hr class="under-tab md:w-105 mb-4">
+        <div class="flex justify-center md:justify-start ">
+          <a href="" class=" p-3 px-6 pt-2 text-white bg-amber-800 baseline rounded-sm hover:bg-amber-600">Order Now</a>
+        </div>
+      </div>
+
+      <!-- Right items -->
+<div class="md:w-1/2 flex photo-div justify-center items-center">
+  <img src="../images/lotion-img-hero-removebg-preview.png" id="bg-less-section" class="max-w-full w-auto object-contain mx-auto first-pic" alt="illustration-intro">
+</div>
+    </div>
+  </section>
+</div>
+
+<div class="bg-amber-800 h-auto py-7 item w-auto container items-center justify-between space-y-12 flex flex-col md:flex-row ">
+ <div class="rating flex-row md:text-left text-center md:ml-39">
+  <h1 class="text-lg">Trusted by over 10,000+ clients <br> worldwide since 2018.</h1>
+ </div>
+
+ <div class="flex-row mr-39">
+  <div class="flex flex-col md:flex-row items-center space-x-12 justify-between">
+
+      <div class=" flex-row items-center text-center reviews star-rating pr-6 pl-4 py-4">
+      <h1 class="text-5xl">4.8</h1>
+      <h2>⭐⭐⭐⭐</h2>
+      <h3 class="text-sm">4,300 ratings</h3>
+      </div>
+     
+       <div class="flex-row hidden md:block star-rating pr-6 pl-4 py-4">
+      <h1 class="text-5xl">1.7M</h1>
+      <h3 class="text-sm">worldwide products <br> sold per year</h3>
+      </div>
+
+  </div>
+ </div>
+</div>
+
+<div class="text-center item mt-18">
+<h1 class="benefits"> Benefits </h1>
+<h1 class=" healthy-skin text-3xl px-4 font-bold">Here at Auréa Healthy Skin Means a Healthier You!</h1>
+</div>
+
+
+
+<!-- Main container: for the two sections (image and benefits list)
+-->
+<div class="flex flex-col-reverse item md:flex-row items-center justify-between">
+
+
+  <!-- left side (now bottom on mobile): Image.
+       - Use `w-full` on mobile.
+       - Revert to `md:w-1/2` on medium screens.
+  -->
+  <div class="flex item w-full md:w-1/2">
+    <img src="../images/ingredients-used.jpg" 
+    class="w-78 md:w-115 object-contain item mx-auto mt-9 rounded-3xl" alt="img of lotion ">
+  </div>
+
+
+   <!-- Right side (now top on mobile): Benefits list.
+       - Use `w-full` to make it full width on mobile.
+       - Revert to `md:w-1/2` on medium screens.
+  -->
+  <div class="w-full md:w-1/2 item px-8 md:pl-8 mt-8 space-y-6 items-center justify-between">
+    <!-- Deep Hydration -->
+    <div class="flex items-center sm:space-x-4">
+      <div class="fst-img-bg p-2 text-center rounded-2xl mr-4 sm:mr-6 flex-shrink-0">
+        <i class="fa-solid fa-droplet w-6 h-6 pt-2 sm:w-8 sm:h-8 text-amber-800 "></i>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold sm:text-xl primary-txt">Deep Hydration</h3>
+        <p class="text-sm sm:text-base primary-txt ">Locks in moisture to keep skin supple, smooth, and comfortable throughout the day.</p>
+      </div>
+    </div>
+    <hr>
+    <!-- Radiance Boost -->
+    <div class="flex items-center sm:space-x-4">
+      <div class="fst-img-bg text-center p-2 rounded-2xl mr-4 sm:mr-6 flex-shrink-0">
+        <i class="fa-solid fa-star w-6 h-6 pt-2 sm:w-8 sm:h-8 text-amber-800"></i>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold sm:text-xl primary-txt">Radiance Boose</h3>
+        <p class="text-sm sm:text-base primary-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. quibusdam vccusamus tempore. Ex, saepe..</p>
+      </div>
+    </div>
+    <hr>
+    <!-- Skin Barrier Support -->
+    <div class="flex items-center sm:space-x-4">
+      <div class="fst-img-bg p-2 text-center rounded-2xl mr-4 sm:mr-6 flex-shrink-0">
+        <i class="fa-solid fa-heart w-6 h-6 sm:w-8 pt-2 sm:h-8 text-amber-800"></i>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold sm:text-xl primary-txt">Skin Barrier Support</h3>
+        <p class="text-sm sm:text-base primary-txt">Strengthens and protects against environmental stressors for healthier, more resilient skin.</p>
+      </div>
+    </div>
+    <hr>
+    <!-- Powered by Natural Ingredients -->
+    <div class="flex items-center sm:space-x-4">
+      <div class=" fst-img-bg p-2 text-center my-auto rounded-2xl mr-4 sm:mr-6 flex-shrink-0">
+        <i class="fa-solid fa-leaf w-6 h-6 sm:w-8 pt-2 sm:h-8 text-amber-800"></i>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold sm:text-xl primary-txt">Natural Ingredients</h3>
+        <p class="text-sm sm:text-base">Formulated with botanically derived oils and plant extracts to nourish, and restore free from harsh chemicals.</p>
+      </div>
+    </div>
+    <hr>
+  </div>
+</div>
+
+<!-- </div> -->
+<div class="line-break h-5 my-20 bg-amber-800">
+
+</div>
+<!-- check out our products  -->
+<section class="item ">
+  <div class="text-center benefits text-4xl mt-18 mb-10">
+    <h1 class="item font-bold">Check Out Our Products!</h1>
+  </div>
+
+  <div>
+    <div class="flex flex-row md:space-x-25 space-x-12 justify-center items-center">
+      <!-- first icon -->
+      <div class="flex-col item hidden md:block">
+        <div class="flex fst-img-bg bg-amber-800 h-22 w-22 rounded-full items-center justify-center">
+          <i class="fa-solid fa-face-smile text-2xl text-amber-800"></i>
+        </div>
+        <div id="Smooth" class="text-center justify-center">
+          <h1 class="benefits">Smooth</h1>
+        </div>
+      </div>
+      <!-- second icon -->
+      <div class="flex-col item  hidden md:block">
+        <div class="flex fst-img-bg bg-amber-800 h-22 w-22 rounded-full items-center justify-center">
+          <i class="fa-solid fa-bath text-2xl text-amber-800"></i>
+        </div>
+        <div id="Fresh" class="text-center justify-center">
+          <h1 class="benefits">Fresh</h1>
+        </div>
+      </div>
+      <!-- third icon -->
+      <div class="flex-col item">
+        <div class="flex fst-img-bg bg-amber-800 md:h-22 h-17 md:w-22 w-17 rounded-full items-center justify-center">
+          <i id="Deep" class="fa-solid fa-filter text-2xl text-amber-800"></i>
+        </div>
+        <div class="text-center justify-center">
+          <h1 class="benefits">Deep</h1>
+        </div>
+      </div>
+      <!-- fourth icon -->
+      <div class="flex-col item ">
+        <div class="flex fst-img-bg bg-amber-800 md:h-22 h-17 md:w-22 w-17 rounded-full items-center justify-center">
+          <i class="fa-solid fa-truck-fast text-2xl text-amber-800"></i>
+        </div>
+        <div class="text-center justify-center">
+          <h1 class="benefits">Fast</h1>
+        </div>
+      </div>
+      <!-- fifth icon -->
+      <div class="flex-col item ">
+        <div class="flex fst-img-bg bg-amber-800 md:h-22 h-17 md:w-22 w-17 rounded-full items-center justify-center">
+          <i class="fa-solid fa-paint-roller text-2xl text-amber-800"></i>
+        </div>
+        <div class="text-center justify-center">
+          <h1 class="benefits">Plain</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-center mt-20  ">
+          <a href="" class=" p-3 px-6 pt-2 text-white rounded-2xl bg-amber-800 baseline hover:bg-amber-600">View Shop</a>
+  </div>
+</section>
+
+<div class="line-break w-full item h-5 my-20 bg-amber-800">
+
+</div>
+
+
+<!-- The Heart of Aurea -->
+<section class="mt-5 item ">
+  <div class="flex flex-col-reverse item md:flex-row-reverse items-start justify-between">
+  <!-- left side (now bottom on mobile): Image.
+       - Use `w-full` on mobile.
+       - Revert to `md:w-1/2` on medium screens.
+  -->
+  <div class="flex item w-full md:w-1/2">
+    <img src="../images/embrace-img.jpg" 
+    class="w-85 md:w-110 object-contain item mx-auto mt-9 rounded-3xl" alt="img of lotion ">
+  </div>
+
+
+   <!-- Right side (now top on mobile): Benefits list.
+       - Use `w-full` to make it full width on mobile.
+       - Revert to `md:w-1/2` on medium screens.
+  -->
+  <div class="w-full md:w-1/2 pt-3 px-8 md:pl-8 mt-8 space-y-6 item md:text-left text-center justify-between items-center ">
+  <!-- start text -->
+   <h1 class="text-xs benefits item ">-- About Us --</h1>
+   <div>
+    <h1 class="text-4xl font-bold benefits item mb-3.5 text-center md:text-left">
+      The <span class="animate-ping">Heart</span> of Auréa
+   </h1>
+   </div>
+   
+   <h1 class="text-sm my-10 item About-A">At Auréa, we believe that radiant skin starts with the purest ingredients and the gentlest care.
+     Our mission is simple: to craft skincare that's as nourishing for your skin as it is kind to the planet 
+     inspired by nature and guided by science, every Auréa product blends potont botanical extracts with proven 
+     active ingredients to deliver visible results without compromise.</h1>
+   <div>
+   <hr>
+   <div class="hidden md:flex justify-self-start mt-11 ">
+          <a href="" class=" p-3 px-6 pt-2 text-white bg-amber-800 baseline item rounded-2xl hover:bg-amber-600">Order Now</a>
+  </div>
+  </div>
+</div>
+</section>
+
+<div class="line-break item w-full h-5 my-20 bg-amber-800">
+
+</div>
+<!-- testimonials section -->
+  <section id="testimonials" class="item" >
+  <!-- container to heading and testimonial blocks -->
+   <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+<!-- heading  -->
+ <h1 class="text-xs item benefits">-- Testimonial --</h1>
+ <h2 class="text-4xl font-bold text-center item benefits">
+  See What Our Customers Have to Say!
+ </h2>
+
+ <!-- testimonials container -->
+  <div class=" flex flex-col mt-24 md:flex-row md:space-x-6">
+    <!-- testimonial 1 -->
+     <div class="flex flex-col item items-center p-6 space-y-6 rounded-lg test-card md:w-1/3">
+      <img class="w-16 item -mt-14" src="../images/avatar-anisha.png" alt="first testimonial ">
+      <h5 class="text-lg font-bold item benefits">Anisha Li</h5>
+      <p class="text-sm text-gray-800 item primary-txt">
+        "I've tried countless products, but Auréa is the first to deliver on its promises.
+         The visible results on my skin are remarkable—it's smoother, more radiant, and truly 
+         feels nourished from within."
+      </p>
+     </div>
+
+       <!-- testimonial 2 -->
+     <div class="hidden flex-col item items-center p-6 space-y-6 rounded-lg test-card md:flex md:w-1/3">
+      <img class="w-16 item -mt-14" src="../images/avatar-ali.png" alt="first testimonial ">
+      <h5 class="text-lg font-bold item benefits">Ali Bravo</h5>
+      <p class="text-sm text-gray-800 item primary-txt">
+        "Switching to Auréa was the best decision for my skin. Their products feel luxurious to apply and have become
+         a favorite part of my daily routine, making self-care feel like a real treat."
+      </p>
+     </div>
+
+       <!-- testimonial 3 -->
+     <div class="hidden flex-col item items-center p-6 space-y-6 rounded-lg test-card md:flex md:w-1/3">
+      <img class="w-16 item -mt-14" src="../images/avatar-richard.png" alt="second testimonial ">
+      <h5 class="text-lg font-bold item benefits">Richard Watts</h5>
+      <p class="text-sm text-gray-800 item primary-txt">
+        "It’s a relief to find a brand like Auréa that I can trust. Their commitment to pure, natural
+         ingredients gives me peace of mind, 
+        knowing I’m using products that are both effective and genuinely good for me."
+      </p>
+     </div>
+
+  </div>
+
+   </div>
+   </section>
+   
+   <div class="line-break w-full h-5 my-20 bg-amber-800">
+
+</div>
+
+<!-- news letter -->
+   <section id="news-letter" class="mt-15">
+  <div class="flex flex-col md:flex-row-reverse items-start justify-between">
+  <!-- left side (now bottom on mobile): Image.
+       - Use `w-full` on mobile.
+       - Revert to `md:w-1/2` on medium screens.
+  -->
+  <div class="flex item-left w-full md:w-1/2">
+    <img src="../images/black-lady-using product.jpg" 
+    class="w-85 md:w-110 object-contain mx-auto mt-9 rounded-3xl" alt="img of lotion ">
+  </div>
+
+
+   <!-- Right side (now top on mobile): Benefits list.
+       - Use `w-full` to make it full width on mobile.
+       - Revert to `md:w-1/2` on medium screens.
+  -->
+  <div class="w-full md:w-1/2 pt-3 px-8 md:pl-8 mt-8 item-right space-y-6 md:text-left text-center justify-between items-center ">
+  <!-- start text -->
+   <div>
+    <h1 class="text-4xl font-bold benefits mb-3.5 text-center md:text-left">
+      Subscribe to our Newsletter
+   </h1>
+   </div>
+   
+   <h1 class=" my-10 About-A">Subscribe to our newsletter and become part of the community 
+    that believes in a radiant skin and a radiant planet At Auréa!!</h1>
+   <div>
+   <hr>
+   <!-- From Uiverse.io by emmanuelh-dev --> 
+<div class="relative flex w-full max-w-lg mt-8 items-center rounded-full bg-white shadow-lg">
+    <div class="p-2">
+      <!-- Search icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+    </div>
+    <input 
+      type="text" 
+      class="flex-1 rounded-l-full bg-white py-2 pl-2 text-base font-semibold text-gray-700 outline-none" 
+      placeholder="Search..." 
+      id="search-input"
+    />
+    <button 
+      type="button" 
+      class="rounded-full bg-amber-800 px-6 py-2 text-white font-semibold transition-colors hover:bg-amber-600"
+    >
+      Submit
+    </button>
+  </div>
+   
+  </div>
+</div>
+</section>
+
+<div class="footer bg-amber-800 mt-10">
+
+   <!-- Sample Main Content -->
+    <main class="flex-grow p-10 text-center">
+        <h1 class="text-4xl font-bold text-gray-800 benefits ">Auréa</h1>
+        <p class="mt-4 text-lg text-gray-600 primary-txt">The Brands for your skin !!.</p>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#E8E2C8] py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About Section -->
+                <div class="col-span-1 md:col-span-1 text-center md:text-left">
+                    <h3 class="text-xl font-semibold text-[#AE7234] benefits">Auréa</h3>
+                    <p class="mt-2 text-sm text-gray-600 primary-txt ">
+                        Crafting skincare that’s as nourishing for your skin as it is kind to the planet.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-sm font-semibold text-[#AE7234] tracking-wider benefits uppercase">Quick Links</h3>
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors">Story</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors">Manufacturing</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors">Products</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors">About </a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors">About </a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-sm font-semibold text-[#AE7234] tracking-wider uppercase benefits ">Contact</h3>
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li class="text-gray-600 primary-txt">allwellazubike.com</li>
+                        <li class="text-gray-600 primary-txt">+234-915-601-5252</li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+            </div>
+
+            <!-- Copyright Notice -->
+            <div class="mt-8 pt-8 border-t border-gray-300 text-center">
+                <p class="text-sm text-gray-500 primary-txt">
+                    &copy; 2025 Auréa. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
